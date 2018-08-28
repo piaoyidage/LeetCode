@@ -18,25 +18,25 @@
 
 ```js
 const addTwoNumbers = function(l1, l2) {
-	const sum = getNum(l1) + getNum(l2)
+    const sum = getNum(l1) + getNum(l2)
     return getNumList(sum)
 }
 
 // 获取链表表示的数字
 const getNum = function(l) {
-	const numbers = [l.val]
-	let nextNode = l.next
-	while (nextNode) {
-		numbers.push(nextNode.val)
-		nextNode = nextNode.next
-	}
-	return parseInt(numbers.reverse().join('')
+    const numbers = [l.val]
+    let nextNode = l.next
+    while (nextNode) {
+        numbers.push(nextNode.val)
+        nextNode = nextNode.next
+    }
+    return parseInt(numbers.reverse().join('')
 }
 
 // 构造数字链表
 const getNumList = function(num) {
-	const numArr = (num + '').split('').reverse().map(item => parseInt(item))
-	return numArr
+    const numArr = (num + '').split('').reverse().map(item => parseInt(item))
+    return numArr
 }；
 ```
 

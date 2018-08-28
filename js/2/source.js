@@ -2,7 +2,7 @@
 * @Author: maoying.hu
 * @Date:   2018-08-28 16:53:13
 * @Last Modified by:   maoying.hu
-* @Last Modified time: 2018-08-28 19:23:28
+* @Last Modified time: 2018-08-28 19:30:35
 */
 
 /**
@@ -18,10 +18,10 @@
  * @return {ListNode}
  */
 const addTwoNumbers = function(l1, l2) {
-	let numArr1 = getNum(l1)
-	let numArr2 = getNum(l2)
+    let numArr1 = getNum(l1)
+    let numArr2 = getNum(l2)
 
-	const len1 = numArr1.length
+    const len1 = numArr1.length
     const len2 = numArr2.length
 
     // 将两个数组处理成一样的长度，用 0 填充
@@ -57,11 +57,11 @@ const addTwoNumbers = function(l1, l2) {
 
 // 获取链表表示的数字
 const getNum = function(l) {
-	const numbers = [l.val]
-	let nextNode = l.next
-	while (nextNode) {
-		numbers.push(nextNode.val)
-		nextNode = nextNode.next
-	}
-	return numbers.join('')
+    const numbers = [l.val]
+    let nextNode = l.next
+    while (nextNode) {
+        numbers.push(nextNode.val)
+        nextNode = nextNode.next
+    }
+    return numbers.join('')
 }
