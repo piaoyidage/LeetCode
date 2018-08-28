@@ -1,9 +1,6 @@
 /*
 * @Author: maoying.hu
-* @Date:   2018-08-28 16:00:49
-* @Last Modified by:   maoying.hu
-* @Last Modified time: 2018-08-28 16:02:03
-*/
+* @Date:   2015-11
 
 /**
  * @param {number[]} nums
