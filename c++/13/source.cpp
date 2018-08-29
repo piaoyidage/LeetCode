@@ -2,7 +2,7 @@
  * @author piaoyidage
  * @version 创建时间：2015-06-09 21:52:54
  *
- */	
+ */ 
 
 class Solution {
 public:
