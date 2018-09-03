@@ -2,7 +2,7 @@
 * @Author: maoying.hu
 * @Date:   2018-09-03 10:50:15
 * @Last Modified by:   maoying.hu
-* @Last Modified time: 2018-09-03 12:54:20
+* @Last Modified time: 2018-09-03 13:24:40
 */
 
 /**
@@ -36,6 +36,9 @@ const longestPalindrome = function(s) {
     let result = s[0]
     let sc = ''
     for (let i = 0; i < len; i++) {
+        if (result.length > len - i) {
+            break
+        }
         for (let j = 0; j < len; j++) {
             sc = s.slice(i, len - j)
             if (isPalindrome(sc)) {

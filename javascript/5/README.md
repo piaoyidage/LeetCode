@@ -50,6 +50,10 @@ const longestPalindrome = function(s) {
     let result = s[0]
     let sc = ''
     for (let i = 0; i < len; i++) {
+        if (result.length > len - i) {
+            // 当前回文串长度大于剩余的子串的长度，就终止循环
+            break
+        }
         for (let j = 0; j < len; j++) {
             sc = s.slice(i, len - j)
             if (isPalindrome(sc)) {
